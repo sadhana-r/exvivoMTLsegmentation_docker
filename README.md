@@ -1,4 +1,4 @@
-# exvivoMTLsegmentation_docker
+# MTL Segmentation in ex vivo MRI
 Docker for Laplace constrained MTL segmentation in PICSL 9.4T ex vivo MRI scans
 
 # About
