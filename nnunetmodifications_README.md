@@ -2,6 +2,7 @@ Scripts that have been modiied from the original nnUnet for SOR training
 
 1. Network Trainer
 /data/sadhanar/nnUNet/nnUNet/nnunet/training/network_training/nnUNetTrainerV2_SOR_MTLatlas.py
+/data/sadhanar/nnUNet/nnUNet/nnunet/training/network_training/nnUNetTrainerV2_SORseg_exp6_fixedaug_run2.py for full model
 
 2. Network Architecture
 /data/sadhanar/nnUNet/nnUNet/nnunet/network_architecture/neural_network_SOR.py

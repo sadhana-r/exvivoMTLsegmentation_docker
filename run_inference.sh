@@ -29,11 +29,11 @@ for file in $(ls /data/input/*_0000.nii.gz);do
 done
 
 #Run nnUnet inference
-echo "Generating MTL segmentation predictions..."
+echo "Generating MTL segmentation predictions"
 nnUNet_predict -i /data/input \
     -o /data/output \
-    -t 601 -m 3d_fullres -tr nnUNetTrainerV2_SOR_MTLAtlas --disable_mixed_precision -f all
-
-# rm /data/input/*_0001.nii.gz
+    -t 509 -tr nnUNetTrainerV2_SORseg_exp6_fixedaug_run2 -m 3d_fullres -p nnUNetPlansv2.1_ps96_bs4 --disable_mixed_precision -f 3
 
 echo "Finished predictions"
+
+rm /data/input/*_0001.nii.gz

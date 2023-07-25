@@ -41,4 +41,5 @@ RUN /bin/bash -c "source ${VIRTUAL_ENV}/bin/activate \
     && cp $MOD_SCRIPTS/dataset_loading_SOR.py  $NNUNET_DIR/training/dataloading/dataset_loading_SOR.py \
     && cp $MOD_SCRIPTS/deep_supervision.py $NNUNET_DIR/training/loss_functions/deep_supervision.py \
     && cp $MOD_SCRIPTS/convert_laplacian_to_seg.py $NNUNET_DIR/utilities/convert_laplacian_to_seg.py \
-    && cp $MOD_SCRIPTS/nnUNetTrainerV2_SOR_MTLatlas.py $NNUNET_DIR/training/network_training/nnUNetTrainerV2_SOR_MTLatlas.py"
+    && cp $MOD_SCRIPTS/nnUNetTrainerV2_SOR_MTLatlas.py $NNUNET_DIR/training/network_training/nnUNetTrainerV2_SOR_MTLatlas.py \
+    && cp $MOD_SCRIPTS/nnUNetTrainerV2_SORseg_exp6_fixedaug_run2.py $NNUNET_DIR/training/network_training/nnUNetTrainerV2_SORseg_exp6_fixedaug_run2.py"
