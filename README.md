@@ -18,16 +18,6 @@ The predicted multi-label segmentation consists of four labels: Gray Matter (1 -
   <img aign = "top" src="/img/exampleseg_full.png" width="45%" /> 
 </p>
 
-<div align="left">
-         <img src="https://github.com/sadhana-r/exvivoMTLsegmentation_docker/blob/master/img/exampleseg_mtl.png" style="width:50%; height:50%">
-      </a>
-</div>
-
-<div align="right">
-         <img src="https://github.com/sadhana-r/exvivoMTLsegmentation_docker/blob/master/img/exampleseg_full.png" style="width:50%; height:50%">
-      </a>
-</div>
-
 # How to generate segmentations
 
 ## Step 1: Download the docker image
