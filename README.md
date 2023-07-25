@@ -9,7 +9,7 @@ This is the set of files and scripts required to generate the docker container f
 Ravikumar, S., Ittyerah, R., Lim, S., Xie, L., Das, S., Khandelwal, P., ... & Yushkevich, P. A. (2023, June). Improved Segmentation of Deep Sulci in Cortical Gray Matter Using a Deep Learning Framework Incorporating Laplace’s Equation. In International Conference on Information Processing in Medical Imaging (pp. 692-704). Cham: Springer Nature Switzerland.
 ``
 
-The trained model is saved on the cluster along with the c3d binaries required by the inference/pre-processing script. The official container on DockerHub is labeled sadhanar/9.4exvivomtlseg:v1.0. 
+The trained model is saved on the cluster along with the c3d binaries required by the inference/pre-processing script. The official container on DockerHub is labeled `sadhanar/9.4exvivomtlseg:v1.0`. Note that `v1.0` only segments the MTL region within the scan. If interested in segmenting the entire scan, pull `sadhanaravikumar/9.4exvivomtlseg:full` instead. 
 
 The predicted multi-label segmentation consists of four labels: Gray Matter (1 - red), White Matter (2 - green) and Background (3 - blue) and SRLM (4 - yellow). 
 
@@ -22,10 +22,12 @@ The predicted multi-label segmentation consists of four labels: Gray Matter (1 -
 
 ## Step 1: Download the docker image
 
-     docker pull sadhanaravikumar/9.4exvivomtlseg:v1.0
+     docker pull sadhanaravikumar/9.4exvivomtlseg:v1.0 
 
-**Note:** `v1.0` only segments the MTL region within the scan. If interested in segmenting the entire scan, pull `sadhanaravikumar/9.4exvivomtlseg:full` instead. 
- 
+or if interested in segmenting the entire scan, use
+
+    docker pull sadhanaravikumar/9.4exvivomtlseg:full
+
 ## Step 2: Pre-process and prepare the data (Optional)
 
 Before running inference, the data can be pre-processed and axis-aligned to faciliate manual editing.  
