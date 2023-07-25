@@ -14,12 +14,12 @@ The trained model is saved on the cluster along with the c3d binaries required b
 The predicted multi-label segmentation consists of four labels: Gray Matter (1 - red), White Matter (2 - green) and Background (3 - blue) and SRLM (4 - yellow). 
 
 <div align="center">
-         <img src="https://github.com/Pulkit-Khandelwal/picsl-brain-ex-vivo/blob/main/files/segm.gif" style="width:75%; height:75%">
+         <img src="https://github.com/sadhana-r/exvivoMTLsegmentation_docker/blob/master/img/exampleseg_fmtl.png" style="width:75%; height:75%">
       </a>
 </div>
 
 <div align="center">
-         <img src="https://github.com/Pulkit-Khandelwal/picsl-brain-ex-vivo/blob/main/files/segm.gif" style="width:75%; height:75%">
+         <img src="https://github.com/sadhana-r/exvivoMTLsegmentation_docker/blob/master/img/exampleseg_full.png" style="width:75%; height:75%">
       </a>
 </div>
 
