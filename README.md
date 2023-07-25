@@ -14,8 +14,8 @@ The trained model is saved on the cluster along with the c3d binaries required b
 The predicted multi-label segmentation consists of four labels: Gray Matter (1 - red), White Matter (2 - green) and Background (3 - blue) and SRLM (4 - yellow). 
 
 <p float="left">
-  <img align = "top" src="/img/exampleseg_mtl.png" width="50%" />
-  <img aign = "top" src="/img/exampleseg_full.png" width="50%" /> 
+  <img align = "top" src="/img/exampleseg_mtl.png" width="45%" />
+  <img aign = "top" src="/img/exampleseg_full.png" width="45%" /> 
 </p>
 
 <div align="left">
