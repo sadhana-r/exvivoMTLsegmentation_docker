@@ -19,7 +19,7 @@ The predicted multi-label segmentation consists of four labels: Gray Matter (1),
 
      docker pull sadhanaravikumar/9.4exvivomtlseg:v1.0
 
-`v1.0` only segments the MTL region within the scan. If interested in segmenting all the tissue in the scan, pull `sadhanaravikumar/9.4exvivomtlseg:full` instead. 
+`v1.0` only segments the MTL region within the scan. If interested in segmenting the entire scan, pull `sadhanaravikumar/9.4exvivomtlseg:full` instead. 
  
 ## Step 2: Pre-process and prepare the data (Optional)
 
