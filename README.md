@@ -13,6 +13,11 @@ The trained model is saved on the cluster along with the c3d binaries required b
 
 The predicted multi-label segmentation consists of four labels: Gray Matter (1 - red), White Matter (2 - green) and Background (3 - blue) and SRLM (4 - yellow). 
 
+<p float="left">
+  <img src="/img/exampleseg_mtl.png" width="50%" />
+  <img src="/img/exampleseg_full.png" width="50%" /> 
+</p>
+
 <div align="left">
          <img src="https://github.com/sadhana-r/exvivoMTLsegmentation_docker/blob/master/img/exampleseg_mtl.png" style="width:50%; height:50%">
       </a>
