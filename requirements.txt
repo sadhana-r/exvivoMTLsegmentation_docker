@@ -1,0 +1,15 @@
+tqdm
+dicom2nifti
+scikit-image
+medpy
+scipy
+batchgenerators==0.23
+numpy
+scikit-learn
+SimpleITK
+pandas
+requests
+nibabel
+tifffile
+matplotlib
+-e git+https://github.com/MIC-DKFZ/nnUNet.git@96d44c2fc1ce5e18da4cd54bf52882047c37982e#egg=nnunet
