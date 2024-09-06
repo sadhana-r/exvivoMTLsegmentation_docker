@@ -53,3 +53,18 @@ To generate MTL segmentation predictions, first log on to the lambda machines. T
 # Sample Data
 
 A sample dataset is located [here](https://upenn.box.com/s/zlj5r2pcvuqct5ynwf4znak3k3ky9jz3)
+
+# Running with Apptainer/Singularity
+In environments where Docker is not available you may be able to run the pipeline using Apptainer (aka singularity). These instructions have been tested with Apptainer version 1.1.9.
+
+Use this command to pull the container from Docker hub and build a sandbox container. Sandbox mode is necessary because the container must be writable.
+
+    singularity build --sandbox /somepath/9.4exvivomtlseg_v1.0_sandbox docker://sadhanaravikumar/9.4exvivomtlseg:v1.0
+
+Then you can run the inference script as follows:
+
+    singularity exec -B /path/to/inputdata/:/data/input:rw -B /path/to/outputdata/:/data/output:rw \
+        --no-mount tmp --pwd /tmp --writable-tmpfs --nv \
+        /somepath/9.4exvivomtlseg_v1.0_sandbox \
+        /bin/bash -c ./run_inference.sh
+
